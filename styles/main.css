@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Layout system variables
+   Based on Figma frame: 1300px width, 50px side spacing */
+:root {
+  --font-base:'Inter', system-ui, sans-serif;
+  --font-heading:'Inter', system-ui, sans-serif;
+
+  --container-width: 1200px;
+  --container-padding: 24px;
+
+  --color-primary: #99e39e;
+  --color-bg:#000510;
+  --color-surface:#111;
+  --color-text:#f3f3f3;
+  --color-muted:#a7acb4;
+
+  /* Spacing scale */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+/* Main layout container */
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
