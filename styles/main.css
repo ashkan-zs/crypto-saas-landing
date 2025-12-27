@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Layout system variables
    Based on Figma frame: 1300px width, 50px side spacing */
 :root {
-  --font-base:'Inter', system-ui, sans-serif;
-  --font-heading:'Inter', system-ui, sans-serif;
+  --font-base: "Inter", system-ui, sans-serif;
+  --font-heading: "Inter", system-ui, sans-serif;
 
   --container-width: 1200px;
   --container-padding: 24px;
 
   --color-primary: #99e39e;
-  --color-bg:#000510;
-  --color-surface:#111;
-  --color-text:#f3f3f3;
-  --color-muted:#a7acb4;
+  --color-bg: #000510;
+  --color-surface: #111;
+  --color-text: #f3f3f3;
+  --color-muted: #a7acb4;
 
   /* Spacing scale */
   --space-xs: 8px;
@@ -102,12 +102,12 @@ header {
 
 .badge {
   display: inline-block;
-  border: .5px solid rgba(153, 227, 158, 0.3);
+  border: 0.5px solid rgba(153, 227, 158, 0.3);
   border-radius: 18px;
   color: var(--color-primary);
   padding: 6px 16px;
   font-size: 14px;
-  background-color:rgba(153, 227, 158, 0.2);
+  background-color: rgba(153, 227, 158, 0.2);
 }
 
 /* Hero Section */
@@ -166,7 +166,7 @@ header {
 
 .partners .title {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -192,7 +192,6 @@ header {
 
 .partner-logo {
   height: 38px;
-  
 }
 
 .partner-text {
@@ -210,3 +209,62 @@ header {
   transform: scale(1.03);
 }
 
+/* Featured coins section */
+.featured-coins .section-header {
+  text-align: center;
+}
+
+.featured-coins .section-header .subtitle {
+  font-size: 18px;
+}
+
+.featured-coins .section-header .title {
+  font-size: 32px;
+}
+
+.coins-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.coin-card {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  max-width: 180px;
+  flex-grow: 1;
+  flex-basis: 160px;
+}
+
+.coin-badge {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-muted);
+}
+
+.coin-icon {
+  height: 32px;
+  margin-block: 16px;
+}
+
+.coin-name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.coin-price {
+  font-size: 14px;
+  margin-top: 4px;
+  font-weight: 300;
+}
+
+.coin-price .cur {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--color-muted);
+}
