@@ -68,6 +68,8 @@ header {
   list-style: none;
 }
 
+/* TODO: add hover for nav links and button. */
+
 .nav-item {
   text-transform: capitalize;
 }
@@ -107,6 +109,8 @@ header {
   font-size: 14px;
   background-color:rgba(153, 227, 158, 0.2);
 }
+
+/* Hero Section */
 
 .hero .container {
   display: flex;
@@ -156,5 +160,53 @@ header {
   width: 20%;
   top: 50px;
   right: 110px;
+}
+
+/* Partners Section */
+
+.partners .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: var(--space-lg);
+}
+
+.partners-logos li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.partner-logo {
+  height: 38px;
+  
+}
+
+.partner-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.partner-logo li:hover .partner-text {
+  color: var(--color-text);
+}
+
+.partners-logos li:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
 
