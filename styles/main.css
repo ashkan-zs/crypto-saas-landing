@@ -22,8 +22,8 @@
   --space-lg: 48px;
   --space-xl: 80px;
 
-  --card-bg-color: rgba(255,255,255,0.05);
-  --card-border-color: rgba(255,255,255,0.1);
+  --card-bg-color: rgba(255, 255, 255, 0.05);
+  --card-border-color: rgba(255, 255, 255, 0.1);
   --card-border-radius: 14px;
 }
 
@@ -380,7 +380,7 @@ header {
   gap: 24px;
 }
 
-.portfolio-item> :last-child {
+.portfolio-item > :last-child {
   margin-left: auto;
 }
 
@@ -397,4 +397,117 @@ header {
 
 .coin-profit {
   color: var(--color-primary);
+}
+
+/* Services section */
+.services .section-header{
+  padding-inline: 170px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.services .section-header .title {
+  margin: 0;
+}
+
+.services-visual {
+  --offset-x: 25%;
+
+  position: relative;
+  width: 690px;
+  height: 690px;
+  margin-inline: auto;
+}
+
+.services-visual .pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.services-visual .iphone {
+  position: absolute;
+  z-index: 2;
+  height: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services-visual .bitcoin-overlay {
+  position: absolute;
+  z-index: 3;
+  height: 200px;
+  right: 12%;
+  top: 25%;
+}
+
+.services-visual .ethereum-overlay {
+  position: absolute;
+  z-index: 1;
+  height: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13%;
+}
+
+.service {
+  position: absolute;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  max-width: 270px;
+  transition: transform .5s ease;
+}
+
+.service:hover {
+  transform: translateY(-4px);
+}
+
+.service-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-bottom: 4px;
+}
+
+.service-desc {
+  margin: 0;
+  color: var(--color-muted);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.service-icon {
+  display: inline-flex;
+  color: var(--color-primary);
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.service-1 {
+  flex-direction: row-reverse;
+  text-align: end;
+  top: 22%;
+  left: calc(-1 * var(--offset-x) + 3%);
+}
+
+.service-2 {
+  flex-direction: row-reverse;
+  text-align: end;
+  top: 58%;
+  left: calc(-1 * var(--offset-x) - 3%);
+}
+
+.service-3 {
+  top: 18%;
+  right: -19%;
+  right: calc(-1 * var(--offset-x) + 6%);
+}
+
+.service-4 {
+  top: 65%;
+  right: calc(-1 * var(--offset-x));
 }
