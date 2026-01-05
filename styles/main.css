@@ -105,10 +105,19 @@ header {
 
 .subtitle {
   font-size: 18px;
+  margin: 0;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -.6;
+  margin-block: 12px;
+}
+
+.desc {
+  color: var(--color-muted);
+  margin: 0;
 }
 
 /* Main layout container */
@@ -400,14 +409,10 @@ header {
 }
 
 /* Services section */
-.services .section-header{
+.services .section-header {
   padding-inline: 170px;
   text-align: center;
   margin-bottom: 24px;
-}
-
-.services .section-header .title {
-  margin: 0;
 }
 
 .services-visual {
@@ -456,7 +461,7 @@ header {
   align-items: start;
   gap: 12px;
   max-width: 270px;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 .service:hover {
@@ -510,4 +515,45 @@ header {
 .service-4 {
   top: 65%;
   right: calc(-1 * var(--offset-x));
+}
+
+/* Template section */
+.template .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.template .content {
+  max-width: 560px;
+}
+
+.template ul {
+ padding-block: 40px;
+}
+
+.template li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  padding-block: 20px;
+}
+
+.template li:last-child {
+  border: none;
+}
+
+.template li .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.template img {
+  max-width: 560px;
 }
