@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
 
 /* Layout system variables
    Based on Figma frame: 1300px width, 50px side spacing */
@@ -111,7 +111,7 @@ header {
 .title {
   font-size: 36px;
   line-height: 1.2;
-  letter-spacing: -.6;
+  letter-spacing: -0.6;
   margin-block: 12px;
 }
 
@@ -529,7 +529,7 @@ header {
 }
 
 .template ul {
- padding-block: 40px;
+  padding-block: 40px;
 }
 
 .template li {
@@ -596,4 +596,77 @@ header {
   color: var(--color-primary);
   width: 24px;
   height: 24px;
+}
+
+/* Support Section */
+.support .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.support-services {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  height: 300px;
+  overflow: hidden;
+  background-color: var(--card-bg-color);
+}
+
+.support-bg {
+  position: absolute;
+  bottom: 0;
+}
+
+.support-service-list {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.support-service-list .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--card-bg-color);
+  backdrop-filter: blur(10px);
+}
+
+.support-service-list .icon {
+  color: var(--color-primary);
+  width: 32px;
+  height: 32px;
+}
+
+.support-service-list h4 {
+  margin: 0;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+.support-service-list p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.support-service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.support-service-item .text {
+  max-width: 250px;
+  text-align: center;
 }
